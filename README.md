@@ -1,1 +1,1 @@
-# My Microverse Portfolio build by Peter Life Dumbari using Microverse figma design
+# My Microverse Portfolio build by Peter Life

@@ -14,14 +14,10 @@
   - [🛠 Built With](#built-with)
     - [HTML](#html)
     - [CSS](#css)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -32,11 +28,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Setup and Mobile first] <a name="about-project"></a>
+# 📖 Setup and Mobile first <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[Setup and Mobile first]** is a Project given my Microverse to
+**Setup and Mobile first** is a Project given my Microverse to
 to her student, to help build their knowledge in git, linter lighthouse and github appropriately.
 
 ## 🛠 Built With <a name="built-with"> HTML and CSS</a>
@@ -45,11 +39,9 @@ to her student, to help build their knowledge in git, linter lighthouse and gith
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[Google]**
-- **[Colleges]**
-- **[Microverse]**
+- **Google**
+- **Colleges**
+- **Microverse**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -60,8 +52,6 @@ to her student, to help build their knowledge in git, linter lighthouse and gith
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -100,11 +90,7 @@ To run the project, execute the following command:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
-
-👤 **Author1**
+## 👤 Authors <a name="authors"></a>
 
 - GitHub: [@githubhandle](https://github.com/PeterDumbari)
 
@@ -113,8 +99,6 @@ To run the project, execute the following command:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Fully Responsive]**
 - [ ] **[Non Traffic]**
@@ -136,8 +120,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project just drop a comment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -145,8 +127,6 @@ If you like this project just drop a comment
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 Thank you for effort you invested in this Project.
 
@@ -156,15 +136,13 @@ Thank you for effort you invested in this Project.
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **Who build this site**
 
-- **[Who build this site]**
+  - Peter Dumbari
 
-  - [Peter Dumbari]
+- **How long does it toke him build this site**
 
-- **[How does he toke him build it]**
-
-  - [within some hours]
+  - within some hours
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -174,6 +152,26 @@ Thank you for effort you invested in this Project.
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+MIT License
+
+Copyright (c) 2023 Peter's Portfolio
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -1,8 +1,4 @@
 body {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin: 0 !important;
   height: 100vh;
@@ -46,16 +42,14 @@ nav {
   width: 90%;
   background-color: #1c1a19;
   padding: 25px;
-  height: 100%;
+  height: 70%;
   background-image: url("./Assets/images/backgroundimage.png");
   background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: right -100% bottom 0;
+  background-size: 83%;
+  background-position: right -128px bottom -60px;
 }
 
-.textcontainer {
-  margin-top: 15%;
-}
+
 
 .h5 {
   color: #ff6b00;

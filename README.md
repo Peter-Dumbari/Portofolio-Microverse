@@ -1,79 +1,288 @@
-# Linters Config
+<a name="readme-top"></a>
 
-## How to use this repo? 🤔
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
 
-Each directory listed below contains config files specific to one programming language and README file with detailed instructions:
+Modify this file to match your project and remove sections that don't apply.
 
-- [html&css](./html-css)
-- [html&css + javascript](./html-css-js) (for projects that require you to use both JavaScript and HTML & CSS)
-- [ruby](./ruby)
-- [ror](./ror)
-- [javascript](./javascript)
-- [react&redux](./react-redux)
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
 
-Follow those instructions in order to set up linters or validators in your repo.
+OPTIONAL SECTIONS:
+- FAQ
 
-In order to get to know more about linters and GitHub Actions read the recap below.
+After you're finished please remove all the comments and instructions!
+-->
 
-## Linters
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-A linter is a tool that analyzes your source code to flag programming errors, bugs, stylistic errors, and suspicious constructs(source: [Wikipedia](<https://en.wikipedia.org/wiki/Lint_(software)>)).
+  <h3><b>Microverse README Template</b></h3>
 
-There are a few reasons for using linters:
+</div>
 
-1. Catching syntax errors is more efficient. There is no need to debug simple mistakes like typos - the linter does it for you.
-2. The entire codebase looks like written by one person.
-3. Programmers can focus on solving problems, instead of cleaning up the code.
+<!-- TABLE OF CONTENTS -->
 
----
+# 📗 Table of Contents
 
-You can find linters for most of the programming languages, e.g. Rubocop for Ruby or ESLint for JavaScript.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [HTML](#html)
+    - [CSS](#css)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-Also, there are many ways you can integrate a linter in your workflow:
+<!-- PROJECT DESCRIPTION -->
 
-- text editor plugin
-- GitHub Actions
-- GitHub apps
+# 📖 [Peter's Portfolio] <a name="about-project"></a>
 
-## GitHub Actions
+> Describe your project in 1 or 2 sentences.
 
-[Github Actions](https://help.github.com/en/actions) is a [CI/CD](https://codilime.com/what-is-ci-cd-all-you-need-to-know/) service offered by GitHub. It allows you to automate your workflow by letting GitHub take care of a number of tasks which can be triggered by [different of events](https://help.github.com/en/actions/reference/events-that-trigger-workflows) on the platform.
+**[Peter's Portfolio]** is a...
 
-🐛 **What to do if GitHub Actions does not work?** Check [Troubleshooting](#troubleshooting) below.
+## 🛠 Built With <a name="built-with"></a>
 
-You can automate tasks by creating **workflows** in your GitHub repository. GitHub will look for [YAML](https://en.wikipedia.org/wiki/YAML) files inside of the `.github/workflows` directory.
+### Tech Stack <a name="tech-stack"></a>
 
-## Troubleshooting
+> Describe the tech stack and include only the relevant sections that apply to your project.
 
-Depending on the configuration of your GitHub credentials, you may have an error like this when trying to create a new GitHub Actions workflow:
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **[key_feature_1]**
+- **[key_feature_2]**
+- **[key_feature_3]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://google.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> Describe how a new developer could make use of your project.
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+<!--
+Example command:
+
+```sh
+ gem install rails
+```
+ -->
+
+### Setup
+
+Clone this repository to your desired folder:
+
+<!--
+Example commands:
+
+```sh
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
+```
+--->
+
+### Install
+
+Install this project with:
+
+<!--
+Example command:
+
+```sh
+  cd my-project
+  gem install
+```
+--->
+
+### Usage
+
+To run the project, execute the following command:
+
+<!--
+Example command:
+
+```sh
+  rails server
+```
+--->
+
+### Run tests
+
+To run tests, run the following command:
+
+<!--
+Example command:
+
+```sh
+  bin/rails test test/models/article_test.rb
+```
+--->
+
+### Deployment
+
+You can deploy this project using:
+
+<!--
+Example:
+
+```sh
 
 ```
-! [remote rejected] master -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/file.yml` without `workflow` scope)
+ -->
 
-```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-The problem is that you may be using a credentials app like [Credential Manager in Windows](https://github.com/gitextensions/gitextensions/issues/4916#issuecomment-557509451) or OSX Keychain. In that case, you should [setup a personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) and configure it in your credentials app. Make sure to check the `workflow` permissions when you setup your personal access token.
+<!-- AUTHORS -->
 
-If you had a different problem related to a specific tool, please check detailed instructions for each linter:
+## 👥 Authors <a name="authors"></a>
 
-- [html&css](./html-css#troubleshooting)
-- [ruby](./ruby#troubleshooting)
-- [ror](./ror#troubleshooting)
-- [javascript](./javascript#troubleshooting)
-- [react&redux](./react-redux#troubleshooting)
+> Mention all of the collaborators of this project.
 
-## Validation
+👤 **Author1**
 
-Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-TSEs will validate that you are using the same configuration files provided here. You can check if your linter configuration is correct using the [`check-linters-config`](scripts) script.
+👤 **Author2**
 
-## Stickler
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-This is the **GitHub Actions configuration**. If you are looking for the **Stickler configuration**, you can find it [here](https://github.com/microverseinc/linters-config/tree/Stickler).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Contributing
+<!-- FUTURE FEATURES -->
 
-Everybody is welcome to suggest changes in linters config files.
+## 🔭 Future Features <a name="future-features"></a>
 
-In order to do it, fork this repository, create a new branch and open a Pull Request from your branch. A detailed description of this process: [A Step by Step Guide to Making Your First GitHub Contribution by Roshan Jossey](https://codeburst.io/a-step-by-step-guide-to-making-your-first-github-contribution-5302260a2940)
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[new_feature_1]**
+- [ ] **[new_feature_2]**
+- [ ] **[new_feature_3]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> Write a message to encourage readers to support your project
+
+If you like this project...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> Give credit to everyone who inspired your codebase.
+
+I would like to thank...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+> Add at least 2 questions new developers would ask when they decide to use your project.
+
+- **[Question_1]**
+
+  - [Answer_1]
+
+- **[Question_2]**
+
+  - [Answer_2]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

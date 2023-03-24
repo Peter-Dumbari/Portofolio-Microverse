@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>HELLO MICROVERSE PROJECT</b></h3>
+  <h3><b>SETUP AND MOBILE FIRST PROJECT</b></h3>
 
 </div>
 
@@ -28,9 +28,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse Project <a name="about-project"></a>
+# 📖 Setup and Mobile first <a name="about-project"></a>
 
-**Hello Microverse Project** is a Project given my Microverse to
+**Setup and Mobile first** is a Project given my Microverse to
 to her student, to help build their knowledge in git, linter lighthouse and github appropriately.
 
 ## 🛠 Built With <a name="built-with"> HTML and CSS</a>
@@ -150,11 +150,11 @@ Thank you for effort you invested in this Project.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./https://github.com/Peter-Dumbari/Microverse_project/blob/main/LICENSE) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 MIT License
 
-Copyright (c) 2023 [Hello Microverse Project]
+Copyright (c) 2023 Peter's Portfolio
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

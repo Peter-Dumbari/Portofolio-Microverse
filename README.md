@@ -14,14 +14,10 @@
   - [🛠 Built With](#built-with)
     - [HTML](#html)
     - [CSS](#css)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -32,9 +28,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Setup and Mobile first] <a name="about-project"></a>
+# 📖 Setup and Mobile first <a name="about-project"></a>
 
-**[Setup and Mobile first]** is a Project given my Microverse to
+**Setup and Mobile first** is a Project given my Microverse to
 to her student, to help build their knowledge in git, linter lighthouse and github appropriately.
 
 ## 🛠 Built With <a name="built-with"> HTML and CSS</a>
@@ -43,9 +39,9 @@ to her student, to help build their knowledge in git, linter lighthouse and gith
 
 ### Key Features <a name="key-features"></a>
 
-- **[Google]**
-- **[Colleges]**
-- **[Microverse]**
+- **Google**
+- **Colleges**
+- **Microverse**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,9 +90,7 @@ To run the project, execute the following command:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
-
-👤 **Author1**
+## 👤 Authors <a name="authors"></a>
 
 - GitHub: [@githubhandle](https://github.com/PeterDumbari)
 
@@ -142,13 +136,13 @@ Thank you for effort you invested in this Project.
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[Who build this site]**
+- **Who build this site**
 
-  - [Peter Dumbari]
+  - Peter Dumbari
 
-- **[How does he toke him build it]**
+- **How long does it toke him build this site**
 
-  - [within some hours]
+  - within some hours
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,7 +154,7 @@ This project is [MIT](./LICENSE) licensed.
 
 MIT License
 
-Copyright (c) [2023] [Peter's Portfolio]
+Copyright (c) 2023 Peter's Portfolio
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

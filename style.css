@@ -97,6 +97,11 @@
     width: 60%;
   }
 
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+
   .icon-image {
     width: 20px;
     height: auto;
@@ -190,9 +195,20 @@
     justify-content: baseline;
   }
 
-  .nav-link:hover {
+  .link {
+    text-decoration: none;
+    color: #ffff;
+    transition: 0.5s;
+  }
+
+  .link:hover {
     color: #ff6b00;
     transition: 0.5s;
+  }
+
+  .active {
+    color: #ff6b00;
+    font-weight: bold;
   }
 
   .baricon {

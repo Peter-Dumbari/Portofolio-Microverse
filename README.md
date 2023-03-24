@@ -150,7 +150,7 @@ Thank you for effort you invested in this Project.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/Peter-Dumbari/Portofolio-Microverse/blob/main/LICENSE) licensed.
 
 MIT License
 

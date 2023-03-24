@@ -1,112 +1,115 @@
-@media (min-width: 375px) {
-  body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 !important;
-    height: 100vh;
-  }
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+  height: 100vh;
+}
 
-  nav {
-    background-color: #3c3a39;
-    width: 90%;
-    padding: 25px;
-    color: #fff;
-  }
+nav {
+  background-color: #3c3a39;
+  width: 90%;
+  padding: 25px;
+  color: #fff;
+}
 
-  .nav-items {
-    display: none;
-  }
+.nav-items {
+  display: none;
+}
 
-  .navbar-innercontainer {
-    display: flex;
-    justify-content: space-between;
-  }
+.navbar-innercontainer {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .nav-logo {
-    font-weight: 600;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI" Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: large;
-  }
+.nav-logo {
+  font-weight: 500;
+  font-size: large;
+  font-family: sans-serif;
+}
 
-  .baricon {
-    width: 25px;
-    cursor: pointer;
-  }
+.baricon {
+  width: 20px;
+  cursor: pointer;
+}
 
-  .bar {
-    width: 100%;
-    background-color: #ffff;
-    padding: 1.5px;
-    margin-bottom: 4px;
-  }
+.bar {
+  width: 100%;
+  background-color: #ffff;
+  padding: 1.5px;
+  margin-bottom: 4px;
+}
 
-  .herosection {
-    width: 90%;
-    background-color: #1c1a19;
-    padding: 25px;
-    height: 100%;
-  }
+.herosection {
+  width: 90%;
+  background-color: #1c1a19;
+  padding: 25px;
+  height: 100%;
+}
 
-  .h5 {
-    color: #ff6b00;
-    font-size: 57px;
-    width: 300px;
-    font-weight: 400;
-    margin-bottom: 5px;
-    font-family:
-      create "Lucida Sans",
-      "Lucida Sans Regular",
-      "Lucida Grande",
-      "Lucida Sans Unicode",
-      Geneva,
-      Verdana,
-      sans-serif;
-  }
+.h5 {
+  color: #ff6b00;
+  font-size: 57px;
+  width: 300px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-family:
+    create "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
+}
 
-  .h6 {
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
-    font-size: 24px;
-    color: #ffff;
-    font-weight: 400;
-    margin: 5px;
-  }
+.h6 {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 24px;
+  color: #ffff;
+  font-weight: 400;
+  margin: 5px;
+}
 
-  p {
-    color: #ffff;
-    font-size: 16px;
-  }
+p {
+  color: #ffff;
+  font-size: 16px;
+  line-height: 26px;
+}
 
-  .icon-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 60%;
-  }
+.icon-container {
+  display: flex;
+  align-items: baseline;
+  width: 60%;
+  padding: 0;
+}
 
-  li {
-    text-decoration: none;
-    list-style: none;
-  }
+.icon_link {
+  margin: 0 7px;
+}
 
-  .icon-image {
-    width: 20px;
-    height: auto;
-    cursor: pointer;
-  }
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.icon-image {
+  width: 18px;
+  height: auto;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

@@ -162,11 +162,12 @@ hr {
 .button-flex {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 0;
 }
 
 .default-btn {
-  padding: 12px 12px;
+  padding: 12px 17px;
   font-size: 3vw;
   border-radius: 0;
   border: 1px solid #8993a4;
@@ -207,6 +208,9 @@ background-size: contain; */
   background-size: cover;
   padding-bottom: 1rem;
   padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .art_print_header {
@@ -215,15 +219,17 @@ background-size: contain; */
   line-height: 60px;
   font-weight: 500;
   margin-bottom: 0;
-  padding-top: 5rem;
+  padding-top: 2.5rem;
 }
 
 .art_print_paragraph {
   color: #ffff;
   margin: 0;
   width: 90%;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 30px;
+  font-family: sans-serif;
+  font-weight: 200;
 }
 
 .art_print_btn_container {
@@ -235,7 +241,7 @@ background-size: contain; */
 }
 
 .transparent-btn {
-  padding: 13px;
+  padding: 13px 20px;
   font-size: 4vw;
   background-color: #ffffff72;
   color: #ffff;
@@ -262,10 +268,11 @@ background-size: contain; */
 
 .aboutme_header_text {
   text-align: center;
-  font-size: 10vw;
+  font-size: 21vw;
   color: #ff6b00;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
+  margin-bottom: 0;
 }
 
 .aboutme_paragraph {

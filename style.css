@@ -184,6 +184,36 @@ hr {
   font-weight: 800;
   line-height: 24px;
   width: 100%;
+  transition: 0.5s;
+}
+
+.primarybtn:hover{
+  background-color: #f3c09b;
+  color: #ff6b00;
+  border: 2px solid #ff6b00;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.pri:focus{
+  background-color: #f3c09b;
+  color: #ffff;
+  font-weight: 600;
+  transition: 0.5s;
+  background-color: #a74702;
+
+}
+
+.disable{
+  background-color: #e8e5e4;
+  color: #1c1a19;
+  border-color: #e8e5e4;
+}
+
+.disable:hover{
+  background-color: #e8e5e4;
+  color: #1c1a19;
+  border-color: #e8e5e4;
 }
 
 .multiple-btn-container {
@@ -270,9 +300,10 @@ background-size: contain; */
   text-align: center;
   font-size: 21vw;
   color: #ff6b00;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 300;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 .aboutme_paragraph {

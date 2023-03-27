@@ -1,12 +1,18 @@
-body {
-  justify-content: center;
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
+#header {
+  background-color: #3c3a39;
+}
+
 
 nav {
   background-color: #3c3a39;
   padding: 25px;
   color: #fff;
+
 }
 
 .nav-items {
@@ -21,7 +27,7 @@ nav {
 .nav-logo {
   font-weight: 500;
   font-size: large;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .baricon {

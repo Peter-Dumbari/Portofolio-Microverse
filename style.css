@@ -465,7 +465,7 @@ hr {
 }
 
 .form_section_text {
-  width: 327px;
+  width: 100%;
   height: 216px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -484,6 +484,8 @@ hr {
 .comment_form {
   width: 100%;
   margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .textinput {

@@ -22,7 +22,7 @@ nav {
 .nav-logo {
   font-weight: 500;
   font-size: large;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .baricon {
@@ -51,8 +51,8 @@ nav {
 }
 
 .h5 {
-  font-family: 'Crete Round', sans-serif;
-  font-size: 3.5rem;
+  font-family: "Crete Round", sans-serif;
+  font-size: 56px;
   font-weight: 400;
   line-height: 64px;
   letter-spacing: 0.3700000047683716px;
@@ -64,7 +64,7 @@ nav {
 }
 
 .h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 43px;
@@ -78,7 +78,7 @@ nav {
   color: #ffff;
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 
@@ -115,13 +115,12 @@ li {
 }
 
 .middlesection-container {
-  text-align: center;
   margin-top: 8%;
 }
 
 .middlesection_header_title {
   text-align: center;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-size: 40px;
   font-weight: 400;
   line-height: 52px;
@@ -148,7 +147,7 @@ hr {
 }
 
 .multiples-stories_header {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -158,7 +157,7 @@ hr {
 
 .multiples-stories_paragraph {
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -175,11 +174,13 @@ hr {
 
 .buttons {
   display: flex;
-  gap: 19px;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .default-btn {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
@@ -197,8 +198,7 @@ hr {
   background-color: #ff6b00;
   color: #ffff;
   line-height: 24px;
-  width: 131px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -206,8 +206,7 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  gap: 24px;
 }
 
 .smallprimarybtn {
@@ -218,7 +217,7 @@ hr {
   color: #ffff;
   line-height: 24px;
   width: 195px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -238,7 +237,7 @@ hr {
   color: #ffff;
   line-height: 24px;
   width: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -287,7 +286,7 @@ hr {
 }
 
 .art_print_header {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -298,7 +297,7 @@ hr {
 }
 
 .art_print_paragraph {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -310,11 +309,12 @@ hr {
   display: flex;
   gap: 1rem;
   margin: 0.5rem 0 0.5rem;
+  flex-wrap: wrap;
 }
 
 .transparent-btn {
   padding: 10px 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -352,7 +352,7 @@ hr {
 
 .aboutme_header_text {
   height: 79px;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -367,7 +367,7 @@ hr {
 
 .aboutme_paragraph {
   height: 148px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -428,7 +428,7 @@ hr {
 }
 
 .language_label {
-  font-family: 'InaiMathi', sans-serif;
+  font-family: "InaiMathi", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -444,7 +444,7 @@ hr {
 }
 
 .skill_list {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -462,12 +462,13 @@ hr {
 .form_section_container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form_section_text {
-  width: 100%;
-  height: 216px;
-  font-family: 'Inter', sans-serif;
+  width: 327px;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -479,13 +480,12 @@ hr {
 .form_container {
   padding-top: 58px;
   background-color: white;
+  width: 100%;
 }
 
 .comment_form {
   width: 100%;
   margin-bottom: 24px;
-  display: flex;
-  flex-direction: column;
 }
 
 .textinput {
@@ -494,14 +494,11 @@ hr {
   border: none;
   border-bottom: 0.5px solid #dbd8d7;
   margin-bottom: 24px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-
-  /* or 160% */
-
   display: flex;
   align-items: center;
 }
@@ -513,7 +510,7 @@ hr {
 .textinput_textarea {
   width: 100%;
   padding: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
@@ -531,7 +528,6 @@ hr {
   align-items: center;
   justify-content: center;
   margin-bottom: 78px;
-  margin-top: 10px;
 }
 
 .form_icon_container {
@@ -556,4 +552,387 @@ hr {
 
 .icon_link {
   padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    padding: 26px 142px 26px 154px;
+  }
+
+  .nav-logo {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .nav-items {
+    display: flex;
+    gap: 32px;
+  }
+
+  .nav-link {
+    width: 63px;
+    height: 20px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .icon {
+    display: flex;
+  }
+
+  .baricon {
+    display: none;
+  }
+
+  .herosection {
+    background-color: #1c1a19;
+    padding: 192px 0 25.1% 36px;
+    background-image: url("/Assets/images/desktopbackgroundimage.svg");
+    background-size: 45%;
+    background-position: right;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .herosection_content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 7%;
+  }
+
+  .textcontainer {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .h5 {
+    width: 69.5%;
+    height: 160px;
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+
+  .h6 {
+    width: 69.5%;
+    height: 24px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+
+  .hero-paragraph {
+    width: 50%;
+    height: 123px;
+    font-family: "Inter", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+  }
+
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: fit-content;
+    justify-content: center;
+  }
+
+  /* WORK SECTION */
+
+  .works {
+    padding: 135px 10% 130px 12%;
+    margin: 0;
+    width: 100%;
+  }
+
+  .middlesection-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .middlesection_header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0;
+    gap: 24px;
+  }
+
+  .middlesection_header_title {
+    height: 52px;
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 52px;
+    padding: 0;
+  }
+
+  .midddlesection_image_container {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(30px, 1fr));
+    gap: 2%;
+    width: 100%;
+  }
+
+  .middlesection-image {
+    height: 400px;
+    padding: 0;
+    margin-top: 0;
+    grid-column: span 4;
+  }
+
+  .middlesection_texts_container {
+    height: 100%;
+    grid-column: span 3;
+  }
+
+  .multiples-stories_header {
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 52px;
+  }
+
+  .line_container {
+    grid-column: span 2;
+  }
+
+  .multiples-stories_paragraph {
+    font-weight: 200;
+    font-size: 1.5vw;
+    line-height: 28px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    padding: 0;
+  }
+
+
+  /* CARD SECTION */
+  .professional_art_printing-section {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    width: 100%;
+  }
+
+  .professional_art_printing-section-items {
+    background-image: url("/Assets/images/cardbackground.png");
+    transition: 1s;
+    background-size: cover;
+  }
+
+  .art_print_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    visibility: hidden;
+    background: linear-gradient(#26262600, #262626e5);
+    transition: 2s;
+  }
+
+  /* ABOUT ME SECTION */
+
+  .dark_section {
+    background-color: #1c1a19;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .aboutme_section {
+    width: 100%;
+    background-image: url("/Assets//images/aboutmedesktopbg.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 45%;
+  }
+
+  .aboutme_container {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 130px 12% 0 12%;
+    width: 100%;
+  }
+
+  .aboutme_header_text {
+    width: 566px;
+    height: 78px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .aboutme_paragraph {
+    width: 55%;
+    height: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .aboutme_button_container {
+    margin-top: 24px;
+    margin-bottom: 146px;
+  }
+
+
+  /* LANGUAGE SECTION */
+  .languages_section {
+    margin: 0;
+    display: flex;
+    gap: 16%;
+    align-items: baseline;
+    padding: 146px 0 142px 0;
+    width: 76%;
+    flex-wrap: wrap;
+  }
+
+  .skills_container {
+    flex-direction: column;
+    align-content: flex-start;
+    text-align: left;
+  }
+
+  .flex-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 44.73px;
+    justify-content: left;
+  }
+
+  .language_label {
+    font-family: "InaiMathi", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+  }
+
+  .skill_list_ul {
+    justify-content: left;
+    display: block;
+    align-items: center;
+  }
+
+  .aboutme_line {
+    margin: 0;
+  }
+
+  .skill_list {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 43px;
+  }
+
+  /* FORM SECTION */
+
+  .form_section {
+    padding: 130px 12% 0 12%;
+    margin: 0;
+    width: 100%;
+  }
+
+  .form_section_container {
+    flex-direction: row;
+    gap: 5%;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: normal;
+  }
+
+  .form_text_container {
+    flex-grow: 1;
+  }
+
+  .form_section_text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.3vw;
+    line-height: 52px;
+    text-align: start;
+    padding: 0;
+    align-items: flex-start;
+    justify-content: baseline;
+  }
+
+  .form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    background: transparent;
+    width: fit-content;
+    flex-grow: 3;
+  }
+
+  .comment_form {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .firstnameinput {
+    grid-column: 1;
+  }
+
+  .emailinput {
+    grid-column: span 3;
+  }
+
+  .textinput_textarea {
+    grid-column: span 3;
+  }
+
+  .professional_art_printing-section-items:hover .art_print_container {
+    visibility: visible;
+    transition: 2s;
+  }
 }

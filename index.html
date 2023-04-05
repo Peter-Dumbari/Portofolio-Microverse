@@ -303,16 +303,19 @@
             </div>
 
             <div class="form_container">
-                <form class="comment_form">
-                    <input class="firstnameinput textinput" type="text" placeholder="First Name" /> <br />
-                    <input class="lastnameinput textinput" type="text" placeholder="Last Name" /> <br />
-                    <input class="emailinput textinput" type="email" placeholder="Email address" /><br />
-                    <textarea class="textinput_textarea" name="" id="" cols="10" rows="5"
-                        placeholder="Write me something..."></textarea>
+                <form class="form_container">
+                    <div class="comment_form" action="https://formspree.io/f/xgebnddl" method="POST">
+                        <input class="textinput" name="name" type="text" placeholder="Full Name" maxlength="30"
+                            required />
+                        <input class="textinput" type="email" name="email" placeholder="Email address" required /><br />
+                        <textarea class="textinput_textarea" name="message" id="user-message" cols="10" rows="5"
+                            placeholder="Write me something..." maxlength="500" required></textarea>
+
+                    </div>
+                    <div class="form_btn_container">
+                        <button class="miniprimarybtn">Get in touch</button>
+                    </div>
                 </form>
-                <div class="form_btn_container">
-                    <button class="miniprimarybtn">Get in touch</button>
-                </div>
             </div>
         </div>
 

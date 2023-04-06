@@ -569,11 +569,15 @@ hr {
     align-items: center;
     text-align: center;
     color: #fff;
+    -webkit-animation: right 1s ease-out;
+    animation: Right 1s ease-out;
   }
 
   .nav-items {
     display: flex;
     gap: 32px;
+    -webkit-animation: left 1s ease-out;
+    animation: Left 1s ease-out;
   }
 
   .nav-link {
@@ -932,5 +936,53 @@ hr {
   .professional_art_printing-section-items:hover .art_print_container {
     visibility: visible;
     transition: 2s;
+  }
+
+  @-webkit-keyframes Right {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+
+    80% {
+      transform: translateX(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes Right {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+
+    80% {
+      transform: translateX(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes Left {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+
+    80% {
+      transform: translateX(-20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }

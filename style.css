@@ -251,7 +251,7 @@ hr {
   border: 1px solid #f55800;
   color: #f55800;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .multiple-btn-container {

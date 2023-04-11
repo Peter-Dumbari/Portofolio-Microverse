@@ -540,6 +540,10 @@ hr {
   align-items: center;
 }
 
+.label{
+  display: none;
+}
+
 .footer_icon-container {
   display: flex;
   flex-direction: row;

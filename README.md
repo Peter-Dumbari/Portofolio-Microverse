@@ -47,6 +47,9 @@ to her student, to help build their knowledge in git, linter lighthouse and gith
 
 <!-- LIVE DEMO -->
 
+- ## 🚀 Live Demo <a name="live-demo"></a>
+- [Click here for live video Demo](https://peter-dumbari.github.io/Portofolio-Microverse/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->

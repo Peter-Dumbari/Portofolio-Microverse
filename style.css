@@ -251,7 +251,7 @@ hr {
   border: 1px solid #f55800;
   color: #f55800;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .multiple-btn-container {
@@ -351,7 +351,7 @@ hr {
 }
 
 .aboutme_header_text {
-  height: 79px;
+  height: 78px;
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -378,7 +378,7 @@ hr {
 
 .aboutme_button_container {
   margin-top: 24px;
-  margin-bottom: 201.68px;
+  margin-bottom: 201.67px;
 }
 
 /* LANGUAGE SECTION */
@@ -540,6 +540,10 @@ hr {
   align-items: center;
 }
 
+.label {
+  display: none;
+}
+
 .footer_icon-container {
   display: flex;
   flex-direction: row;
@@ -569,11 +573,15 @@ hr {
     align-items: center;
     text-align: center;
     color: #fff;
+    -webkit-animation: right 1s ease-out;
+    animation: Right 1s ease-out;
   }
 
   .nav-items {
     display: flex;
     gap: 32px;
+    -webkit-animation: left 1s ease-out;
+    animation: Left 1s ease-out;
   }
 
   .nav-link {
@@ -932,5 +940,53 @@ hr {
   .professional_art_printing-section-items:hover .art_print_container {
     visibility: visible;
     transition: 2s;
+  }
+
+  @-webkit-keyframes Right {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+
+    80% {
+      transform: translateX(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes Right {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+
+    80% {
+      transform: translateX(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes Left {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+
+    80% {
+      transform: translateX(-20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }

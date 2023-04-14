@@ -49,6 +49,9 @@ https://www.loom.com/share/7cddef40d23e44c686eb77b841e12d0f
 
 <!-- LIVE DEMO -->
 
+- ## 🚀 Live Demo <a name="live-demo"></a>
+- [Click here for live video Demo](https://peter-dumbari.github.io/Portofolio-Microverse/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->

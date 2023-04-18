@@ -31,15 +31,22 @@ nav {
   display: block;
   color: #fff;
   padding: 1rem 0;
+  border-bottom: 1px solid #6F6C6B;
+
 
 }
 .link{
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
   margin: 5rem 0;
   text-decoration: none;
   font-family: 'Inter';
+  padding-left: 10px;
   
+}
+
+.icon{
+  padding-left: 10px;
 }
 
 .link:hover {
@@ -658,6 +665,7 @@ hr {
     align-items: center;
     text-align: center;
     color: #fff;
+    border: none;
   }
 
   .link {

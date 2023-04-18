@@ -17,44 +17,39 @@ nav {
   height: 100%;
   position: absolute;
   background-color: #3c3a39;
-  width:100%;
+  width: 100%;
   left: 0;
   top: 0;
   padding-top: 1rem;
   padding-left: 24px;
   -webkit-animation-delay: 2s;
   animation: slide 0.5s;
-  animation-delay: 2s;               
-
+  animation-delay: 2s;
 }
-.nav-link{
+
+.nav-link {
   display: block;
   color: #fff;
   padding: 1rem 0;
-  border-bottom: 1px solid #6F6C6B;
-
-
+  border-bottom: 1px solid #6f6c6b;
 }
-.link{
+
+.link {
   color: #fff;
   font-size: 25px;
   margin: 5rem 0;
   text-decoration: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   padding-left: 10px;
-  
 }
 
-.icon{
+.icon {
   padding-left: 10px;
 }
 
 .link:hover {
   color: #ff6b00;
 }
-
-
-
 
 .container {
   display: inline-block;
@@ -66,7 +61,7 @@ nav {
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #67798E;
+  background-color: #67798e;
   margin: 0 0 6px;
   transition: 0.4s;
 }
@@ -642,14 +637,13 @@ hr {
     gap: 32px;
     -webkit-animation: left 1s ease-out;
     animation: Left 1s ease-out;
-    display: none;
     height: 100%;
-    position:relative;
+    position: relative;
     background-color: #3c3a39;
     left: none;
     top: none;
     text-align: none;
-    padding:0;
+    padding: 0;
     width: auto;
   }
 
@@ -1061,4 +1055,3 @@ hr {
     }
   }
 }
-

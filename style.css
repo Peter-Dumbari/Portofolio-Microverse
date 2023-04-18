@@ -22,9 +22,6 @@ nav {
   top: 0;
   padding-top: 1rem;
   padding-left: 24px;
-  -webkit-animation-delay: 2s;
-  animation: slide 0.5s;
-  animation-delay: 2s;
 }
 
 .nav-link {

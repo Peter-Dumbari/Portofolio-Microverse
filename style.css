@@ -14,7 +14,30 @@ nav {
 
 .nav-items {
   display: none;
+  margin-right: -220px;
+  height: auto;
+  width: 20%;
+  margin-bottom: -25px;
 }
+.nav-items .link {
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+.link:hover {
+  color: #ff6b00;
+}
+
+.icon {
+  font-size: 15px;
+  width: 35%;
+  padding-left: 10px;
+}
+
 
 .container {
   display: inline-block;

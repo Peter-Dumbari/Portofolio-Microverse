@@ -21,12 +21,12 @@
             <div class="navbar-innercontainer">
                 <span class="nav-logo">LifeSoft</span>
                 <ul class="nav-items" id="nav-menu">
-                    <li class="nav-link">
-                        <a href="#" class="link active">My CV</a>
+                    <li class="nav-link" id="navlink">
+                        <a href="#portfolio" class="link active">Portfolio</a>
                     </li>
-                    <li class="nav-link"><a href="#" class="link">More_info</a></li>
-                    <li class="nav-link"><a href="#" class="link">Contact</a></li>
-                    <li class="nav-link">
+                    <li class="nav-link" id="navlink"><a href="#aboutme_section" class="link">About</a></li>
+                    <li class="nav-link" id="navlink"><a href="#contact" class="link">Contact</a></li>
+                    <li class="nav-link" id="navlink">
                         <a href="#"><img src="./Assets/logos/emailicon.png" class="icon" alt="icon" /></a>
                     </li>
                 </ul>
@@ -73,7 +73,7 @@
         </section>
 
         <!-- MIDDLE SECTION -->
-        <section class="works">
+        <section class="works" id="portfolio">
             <setion class="middlesection">
                 <div class="middlesection-container">
 
@@ -233,7 +233,7 @@
         <!-- DARK SECTION -->
         <section class="dark_section">
             <!-- ABOUT-ME SECTION -->
-            <section class="aboutme_section">
+            <section class="aboutme_section" id="aboutme_section">
                 <div class="aboutme_container">
                     <h3 class="aboutme_header_text">About me</h3>
                     <p class="aboutme_paragraph">
@@ -254,7 +254,7 @@
             <section class="languages_section">
                 <div class="skills_container">
                     <div class="flex-header">
-                        <div class="rectangle_icon"></div>
+                        <img class="rectangle" src="/Assets/logos/Rectangle 55.png" alt="" srcset="">
                         <span class="language_label">Language</span>
                     </div>
                     <ul class="skill_list_ul">
@@ -304,7 +304,7 @@
                     </p>
                 </div>
 
-                <div class="form_container">
+                <div class="form_container" id="contact">
                     <form class="form_container" action="https://formspree.io/f/xgebnddl" method="POST">
                         <div class="comment_form">
                             <label for="textinput" class="label"></label>

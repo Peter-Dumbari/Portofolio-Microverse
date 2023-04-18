@@ -24,14 +24,15 @@ function addNavMenuToggleListener() {
 function removeNavMenuToggleListener() {
   const toggleButton = document.querySelector("#nav-toggler");
   toggleButton.removeEventListener("click", toggleNavMenu);
+  console.log("from remove navmenu toggle listener");
 }
 
 function checkScreenSize() {
   const toggleButton = document.querySelector("#nav-toggler");
   if (window.innerWidth <= 768) {
-    toggleButton.addEventListener("click", toggleNavMenu);
+    toggleButton.addEventListener("click", addNavMenuToggleListener);
   } else {
-    toggleButton.removeEventListener("click", toggleNavMenu);
+    toggleButton.removeEventListener("click", removeNavMenuToggleListener);
     const navMenu = document.querySelector(".nav-items");
     if (navMenu.classList.contains("active")) {
       navMenu.classList.remove("active");

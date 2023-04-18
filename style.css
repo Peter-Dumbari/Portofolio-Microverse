@@ -13,30 +13,40 @@ nav {
 /* togglering section */
 
 .nav-items {
-  display: none !important;
-  margin-right: -240px;
-  height: auto;
-  width: 20%;
-  margin-bottom: -25px;
+  display: none;
+  height: 100%;
+  position: absolute;
+  background-color: #3c3a39;
+  width:100%;
+  left: 0;
+  top: 0;
+  padding-top: 1rem;
+  padding-left: 24px;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s;
+  animation-delay: 2s;               
+
 }
-.nav-items .link {
-  text-decoration: none;
-  line-height: 40px;
-  font-size: 18px;
-  text-align: center;
-  padding: 10px;
+.nav-link{
+  display: block;
   color: #fff;
+  padding: 1rem 0;
+
+}
+.link{
+  color: #fff;
+  font-size: 30px;
+  margin: 5rem 0;
+  text-decoration: none;
+  font-family: 'Inter';
+  
 }
 
 .link:hover {
   color: #ff6b00;
 }
 
-.icon {
-  font-size: 15px;
-  width: 35%;
-  padding-left: 10px;
-}
+
 
 
 .container {
@@ -49,8 +59,8 @@ nav {
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #ffff;
-  margin: 6px 0;
+  background-color: #67798E;
+  margin: 0 0 6px;
   transition: 0.4s;
 }
 
@@ -625,6 +635,15 @@ hr {
     gap: 32px;
     -webkit-animation: left 1s ease-out;
     animation: Left 1s ease-out;
+    display: none;
+    height: 100%;
+    position:relative;
+    background-color: #3c3a39;
+    left: none;
+    top: none;
+    text-align: none;
+    padding:0;
+    width: auto;
   }
 
   .nav-link {
@@ -644,6 +663,7 @@ hr {
   .link {
     text-decoration: none;
     color: #fff;
+    font-size: 15px;
   }
 
   .icon {
@@ -1033,3 +1053,4 @@ hr {
     }
   }
 }
+

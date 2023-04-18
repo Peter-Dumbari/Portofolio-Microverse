@@ -13,8 +13,8 @@ nav {
 /* togglering section */
 
 .nav-items {
-  display: none;
-  margin-right: -220px;
+  display: none !important;
+  margin-right: -240px;
   height: auto;
   width: 20%;
   margin-bottom: -25px;

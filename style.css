@@ -62,6 +62,7 @@ nav {
   background-color: #67798e;
   margin: 0 0 6px;
   transition: 0.4s;
+  z-index: 999;
 }
 
 .change .bar1 {

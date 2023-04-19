@@ -1,5 +1,6 @@
 const barcontainer = document.querySelector(".baricon");
 const toggle_button = document.querySelector("#nav-toggler");
+
 function barstogglers() {
   barcontainer.classList.toggle("change");
 }
@@ -9,7 +10,7 @@ function toggleNavMenu() {
   barcontainer.addEventListener("click", barstogglers);
   if (menu.style.display === "none") {
     menu.style.display = "block";
-  } else if (menu.style.display == "flex") {
+  } else if (menu.style.display === "flex") {
     menu.style.display = "none";
   } else {
     menu.style.display = "none";
@@ -24,7 +25,6 @@ function addNavMenuToggleListener() {
 function removeNavMenuToggleListener() {
   const toggleButton = document.querySelector("#nav-toggler");
   toggleButton.removeEventListener("click", toggleNavMenu);
-  console.log("from remove navmenu toggle listener");
 }
 
 function checkScreenSize() {
@@ -40,5 +40,17 @@ function checkScreenSize() {
   }
 }
 
+let navlinks = document.querySelectorAll(".nav-link");
+
+function navlinkautoremover() {
+  const menu = document.querySelector(".nav-items");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+    barstogglers();
+  }
+}
+navlinks.forEach((navlink) => {
+  navlink.addEventListener("click", navlinkautoremover);
+});
 window.addEventListener("load", checkScreenSize);
 window.addEventListener("resize", checkScreenSize);

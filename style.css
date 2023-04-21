@@ -731,9 +731,9 @@ hr {
     height: 100%;
     position: relative;
     background-color: #3c3a39;
-    left: none;
-    top: none;
-    text-align: none;
+    left: 0;
+    top: 0;
+    text-align: left;
     padding: 0;
     width: auto;
   }
@@ -1146,7 +1146,6 @@ hr {
     text-align: start;
     padding: 0;
     align-items: flex-start;
-    justify-content: baseline;
   }
 
   .form_container {

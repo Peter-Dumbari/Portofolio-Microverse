@@ -8,10 +8,71 @@ nav {
   background-color: #3c3a39;
   padding: 25px;
   color: #fff;
+  position: fixed;
+  width: 100%;
 }
+
+/* togglering section */
 
 .nav-items {
   display: none;
+  position: absolute;
+  background-color: #3c3a39;
+  height: 90vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 60px 24px 24px 24px;
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #6f6c6b;
+}
+
+.link {
+  color: #fff;
+  font-size: 24px;
+  margin: 5rem 0;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  padding-left: 10px;
+}
+
+.icon {
+  padding-left: 10px;
+}
+
+.link:hover {
+  color: #ff6b00;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #67798e;
+  margin: 0 0 6px;
+  transition: 0.4s;
+  z-index: 999;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 { opacity: 0; }
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
 }
 
 .navbar-innercontainer {
@@ -26,20 +87,13 @@ nav {
 }
 
 .baricon {
-  width: 20px;
+  display: inline-block;
   cursor: pointer;
-}
-
-.bar {
-  width: 100%;
-  background-color: #ffff;
-  padding: 1.5px;
-  margin-bottom: 4px;
 }
 
 .herosection {
   background-color: #1c1a19;
-  padding: 25px;
+  padding: 100px 25px 25px 25px;
   height: 520px;
   background-image: url("./Assets/images/backgroundimage.png");
   background-repeat: no-repeat;
@@ -404,12 +458,8 @@ hr {
   margin-bottom: 44.73px;
 }
 
-.rectangle_icon {
-  width: 18px;
-  height: 18px;
-  background: #ff6b00;
-  transform: rotate(-45deg);
-  margin-right: 25px;
+.rectangle {
+  margin-right: 12px;
 }
 
 .square_icon {
@@ -578,10 +628,18 @@ hr {
   }
 
   .nav-items {
-    display: flex;
+    display: flex !important;
     gap: 32px;
     -webkit-animation: left 1s ease-out;
     animation: Left 1s ease-out;
+    height: 100%;
+    position: relative;
+    background-color: #3c3a39;
+    left: none;
+    top: none;
+    text-align: none;
+    padding: 0;
+    width: auto;
   }
 
   .nav-link {
@@ -596,11 +654,13 @@ hr {
     align-items: center;
     text-align: center;
     color: #fff;
+    border: none;
   }
 
   .link {
     text-decoration: none;
     color: #fff;
+    font-size: 15px;
   }
 
   .icon {

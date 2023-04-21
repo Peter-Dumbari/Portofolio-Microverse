@@ -158,6 +158,18 @@ li {
   cursor: pointer;
 }
 
+#errorMessage {
+  color: red;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+#successMsg {
+  color: green;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
 /* MIDDLESECTION */
 
 .works {
@@ -1225,6 +1237,24 @@ hr {
     100% {
       opacity: 1;
       transform: translateX(0);
+    }
+  }
+
+  @keyframes myAnimation {
+    0% {
+      opacity: 1;
+      transform: rotateX(90deg);
+    }
+
+    50% {
+      opacity: 0.5;
+      transform: rotateX(0deg);
+    }
+
+    100% {
+      display: none;
+      opacity: 0;
+      transform: rotateX(90deg);
     }
   }
 }

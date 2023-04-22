@@ -223,8 +223,6 @@ document.querySelector('.modal-close-btn').addEventListener('click', () => {
   document.querySelector('.modal-container').style.display = 'none';
 });
 
-// CONTACT FORM VALIDATION
-
 const emailError = document.querySelector('#errorMessage');
 const emailSent = document.querySelector('#successMsg');
 
@@ -238,7 +236,7 @@ function contactValidator(event) {
     emailError.textContent = 'Email Not Sent⚠️, all the letters must be in lower case';
     event.preventDefault();
   } else {
-    emailSent.textContent = 'Congratulations, Email sent 👏';
+    emailSent.textContent = 'Cheers, Email sent 👏';
   }
 }
 form.addEventListener('submit', contactValidator);

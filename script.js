@@ -256,7 +256,9 @@ function subMitform(event) {
     localStorage.setItem('formData', JSON.stringify(formData));
   }
 }
-
+if (emailInput.value.toLowerCase) {
+  emailInput.addEventListener('change', subMitform);
+}
 fullNameInput.addEventListener('change', subMitform);
 messageInput.addEventListener('change', subMitform);
 

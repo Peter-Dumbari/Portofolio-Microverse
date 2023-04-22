@@ -222,3 +222,23 @@ modalDisplayBtn.forEach((element) => {
 document.querySelector('.modal-close-btn').addEventListener('click', () => {
   document.querySelector('.modal-container').style.display = 'none';
 });
+
+// CONTACT FORM VALIDATION
+
+const emailError = document.querySelector('#errorMessage');
+const emailSent = document.querySelector('#successMsg');
+
+const form = document.querySelector('#form');
+
+function contactValidator(event) {
+  const email = document.querySelector('#email').value;
+  const emailValidation = /[A-Z]/.test(email);
+
+  if (emailValidation) {
+    emailError.textContent = 'Email Not Sent⚠️, all the letters must be in lower case';
+    event.preventDefault();
+  } else {
+    emailSent.textContent = 'Congratulations, Email sent 👏';
+  }
+}
+form.addEventListener('submit', contactValidator);

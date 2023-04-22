@@ -196,23 +196,22 @@
                 </div>
 
                 <div class="form_container" id="contact">
-                    <form class="form_container" action="https://formspree.io/f/xgebnddl" method="POST">
+                    <form class="form_container" id="form" action="https://formspree.io/f/xgebnddl" method="POST">
                         <div class="comment_form">
                             <label for="textinput" class="label"></label>
-                            <input class="textinput" name="name" type="text" placeholder="Full Name" maxlength="30"
-                                required />
+                            <input class="textinput" name="name" type="text" id="name" placeholder="Full Name"
+                                maxlength="30" required />
                             <label for="textinput" class="label"></label>
-                            <input class="textinput" type="email" name="email" placeholder="Email address"
+                            <input class="textinput" type="email" name="email" id="email" placeholder="Email address"
                                 required /><br />
                             <label for="textinput" class="label"></label>
-                            <textarea class="textinput_textarea" name="message" id="user-message" cols="10" rows="5"
+                            <textarea class="textinput_textarea" name="message" id="successMsg" cols="10" rows="5"
                                 placeholder="Write me something..." maxlength="500" required></textarea>
-
                         </div>
+                        <div id="errorMessage"></div>
+                        <div id="successMsg"></div>
                         <div class="form_btn_container">
-                            <div id="errorMessage"></div>
-                            <div id="successMsg"></div>
-                            <button class="miniprimarybtn">Get in touch</button>
+                            <button class="miniprimarybtn" id="submitButton">Get in touch</button>
                         </div>
                     </form>
                 </div>

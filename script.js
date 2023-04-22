@@ -226,11 +226,8 @@ document.querySelector(".modal-close-btn").addEventListener("click", () => {
 
 //CONTACT FORM VALIDATION
 
-const submitButton = document.querySelector("#submitBtn");
 const emailError = document.querySelector("#errorMessage");
 const emailSent = document.querySelector("#successMsg");
-
-submitButton.addEventListener("click", (event) => {});
 
 const form = document.querySelector("#form");
 

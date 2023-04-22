@@ -10,6 +10,7 @@ nav {
   color: #fff;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 /* togglering section */
@@ -323,12 +324,16 @@ hr {
 }
 
 .professional_art_printing-section-items {
-  background-image: url("/Assets/images/bgimage-mulitpurples.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  z-index: 0;
+  position: relative;
   color: #ffff;
   display: flex;
   flex-direction: column;
+}
+
+.portfolio_image {
+  height: 100%;
+  width: 100%;
 }
 
 .art_print_container {
@@ -336,7 +341,12 @@ hr {
   justify-content: center;
   flex-direction: column;
   gap: 0.74rem;
-  padding: 1rem;
+  padding: 10px 10px 0 10px;
+  position: absolute;
+  top: 0;
+  bottom: 12%;
+  visibility: hidden;
+  background: linear-gradient(#26262600, #262626e5);
 }
 
 .art_print_header {
@@ -376,6 +386,88 @@ hr {
   background-color: #ffffff3d;
   border: none;
   color: #ffff;
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 30px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  padding: 24px;
+  background: #fff;
+  margin: 40px auto auto auto;
+  width: 100%;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.modal-header {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal-paragraph {
+  width: 100%;
+}
+
+.modal-description {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #344563;
+  margin-bottom: 64px;
+}
+
+.modal-list {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  margin: 12px 0 40px 0;
+}
+
+.modal-close-btn {
+  padding: 10px;
+  margin-top: 5px;
+  float: right;
+  cursor: pointer;
+}
+
+#modal-img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-btn-container {
+  display: flex;
+  gap: 12px;
+}
+
+.sourcelink {
+  text-decoration: none;
 }
 
 /* DARK BACKGROUND */
@@ -608,7 +700,11 @@ hr {
   padding: 0;
 }
 
-@media screen and (min-width: 768px) {
+.professional_art_printing-section-items:hover .art_print_container {
+  visibility: visible;
+}
+
+@media only screen and (min-width: 768px) {
   nav {
     padding: 26px 142px 26px 154px;
   }
@@ -635,9 +731,9 @@ hr {
     height: 100%;
     position: relative;
     background-color: #3c3a39;
-    left: none;
-    top: none;
-    text-align: none;
+    left: 0;
+    top: 0;
+    text-align: left;
     padding: 0;
     width: auto;
   }
@@ -801,6 +897,11 @@ hr {
     grid-column: span 2;
   }
 
+  .portfolio_image {
+    height: 377px;
+    width: 100%;
+  }
+
   .multiples-stories_paragraph {
     font-weight: 200;
     font-size: 1.5vw;
@@ -808,6 +909,87 @@ hr {
     font-family: 'Inter', sans-serif;
     width: 100%;
     padding: 0;
+  }
+
+  .modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal {
+    padding: 24px;
+    background: #fff;
+    margin: 40px auto auto auto;
+    width: 80%;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .img-container {
+    width: 60%;
+  }
+
+  .modal-header {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .modal-paragraph {
+    width: 40%;
+  }
+
+  .modal-description {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    margin-bottom: 64px;
+  }
+
+  .modal-list {
+    display: flex;
+    width: 40%;
+    gap: 8px;
+    margin: 12px 0 40px 0;
+  }
+
+  .modal-close-btn {
+    padding: 10px;
+    margin-top: 5px;
+    float: right;
+    cursor: pointer;
+  }
+
+  #modal-img {
+    width: 100%;
+  }
+
+  .modal-btn-container {
+    display: flex;
+    gap: 12px;
+  }
+
+  .sourcelink {
+    text-decoration: none;
   }
 
   /* CARD SECTION */
@@ -820,9 +1002,8 @@ hr {
   }
 
   .professional_art_printing-section-items {
-    background-image: url("/Assets/images/cardbackground.png");
     transition: 1s;
-    background-size: cover;
+    overflow: hidden;
   }
 
   .art_print_container {
@@ -830,10 +1011,8 @@ hr {
     justify-content: center;
     flex-direction: column;
     gap: 0.75rem;
-    padding: 1rem;
     visibility: hidden;
     background: linear-gradient(#26262600, #262626e5);
-    transition: 2s;
   }
 
   /* ABOUT ME SECTION */
@@ -967,7 +1146,6 @@ hr {
     text-align: start;
     padding: 0;
     align-items: flex-start;
-    justify-content: baseline;
   }
 
   .form_container {
@@ -999,7 +1177,6 @@ hr {
 
   .professional_art_printing-section-items:hover .art_print_container {
     visibility: visible;
-    transition: 2s;
   }
 
   @-webkit-keyframes Right {

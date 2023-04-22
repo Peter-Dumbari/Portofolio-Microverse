@@ -225,27 +225,47 @@ document.querySelector('.modal-close-btn').addEventListener('click', () => {
 
 // CONTACT FORM VALIDATION AND LOCAL STORAGE STARTS HERE //
 
-const emailError = document.querySelector('#errorMessage');
-const emailSent = document.querySelector('#successMsg');
-
 const form = document.querySelector('#form');
+const emailInput = document.querySelector('#email');
+const fullNameInput = document.querySelector('#name');
+const messageInput = document.querySelector('#message');
 
-function contactValidator(event) {
-  const email = document.querySelector('#email').value;
-  const name = document.querySelector('#name').value;
-  const message = document.querySelector('#message').value;
+window.addEventListener('load', () => {
+  const fullName = localStorage.getItem('fullName');
+  const email = localStorage.getItem('email');
+  const message = localStorage.getItem('message');
 
-  const emailValidation = /[A-Z]/.test(email);
-
-  if (emailValidation) {
-    emailError.textContent = 'Email Not Sent⚠️, all the letters must be in lower case';
-    event.preventDefault();
-  } else {
-    emailSent.textContent = 'Congratulations, Email sent 👏';
-    localStorage.setItem('name', name);
-    localStorage.setItem('message', message);
-    localStorage.setItem('email', email);
+  if (fullName && email && message) {
+    fullNameInput.value = fullName;
+    emailInput.value = email;
+    messageInput.value = message;
   }
-}
-form.addEventListener('submit', contactValidator);
+});
+
+form.addEventListener('submit', (event) => {
+  const email = emailInput.value.trim();
+  if (email !== email.toLowerCase()) {
+    event.preventDefault();
+    const error = document.querySelector('span');
+    error.textContent = 'Please enter your email in lower case.';
+    error.style.color = '#f55800';
+    error.style.fontFamily = 'Inter';
+    error.style.width = '400px';
+    form.appendChild(error);
+    setTimeout(() => {
+      error.remove();
+    }, 1000);
+  } else {
+    const fullName = fullNameInput.value.trim();
+    const message = messageInput.value.trim();
+    const formData = {
+      fullName,
+      email,
+      message,
+    };
+
+    localStorage.setItem('formData', JSON.stringify(formData));
+  }
+  event.preventDefault();
+});
 // CONTACT FORM VALIDATION  ANAD LOCALSTORAGE ENDS HERE //

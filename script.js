@@ -226,23 +226,12 @@ document.querySelector('.modal-close-btn').addEventListener('click', () => {
 // CONTACT FORM VALIDATION AND LOCAL STORAGE STARTS HERE //
 
 const form = document.querySelector('#form');
+
 const emailInput = document.querySelector('#email');
 const fullNameInput = document.querySelector('#name');
 const messageInput = document.querySelector('#message');
 
-window.addEventListener('load', () => {
-  const fullName = localStorage.getItem('fullName');
-  const email = localStorage.getItem('email');
-  const message = localStorage.getItem('message');
-
-  if (fullName && email && message) {
-    fullNameInput.value = fullName;
-    emailInput.value = email;
-    messageInput.value = message;
-  }
-});
-
-form.addEventListener('submit', (event) => {
+function subMitform(event) {
   const email = emailInput.value.trim();
   if (email !== email.toLowerCase()) {
     event.preventDefault();
@@ -266,6 +255,19 @@ form.addEventListener('submit', (event) => {
 
     localStorage.setItem('formData', JSON.stringify(formData));
   }
-  event.preventDefault();
+}
+
+fullNameInput.addEventListener('change', subMitform);
+messageInput.addEventListener('change', subMitform);
+
+form.addEventListener('submit', subMitform);
+const object = localStorage.getItem('formData');
+const getValue = JSON.parse(object);
+
+window.addEventListener('load', () => {
+  if (localStorage.getItem('formData')) {
+    document.querySelector('#name').value = getValue.fullName;
+    document.querySelector('#email').value = getValue.email;
+    document.querySelector('#message').value = getValue.message;
+  }
 });
-// CONTACT FORM VALIDATION  ANAD LOCALSTORAGE ENDS HERE //

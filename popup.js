@@ -138,10 +138,8 @@ const modalData = [
                         <h2 class="middlesection_header_title">My Recent Works</h2>
                         <div class="line_container">
                             <hr>
-
                         </div>
                     </div>
-
                     <div class="midddlesection_image_container">
                         <img class="middlesection-image" src="${project.img}"
                             alt="${project.name}" />
@@ -152,17 +150,14 @@ const modalData = [
                             </p>
                             <section class="button-flex">
                                 <ul class="buttons">
-
                                   ${lang}
                                 </ul>
                             </section>
-
                             <div class="multiple-btn-container">
                                 <button class="smallprimarybtn" data-index="${index}" id="see_more_btn">See Project</button>
                             </div>
                         </div>
                     </div>
-
                 </div>
       `;
     } else {

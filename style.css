@@ -704,6 +704,18 @@ hr {
   visibility: visible;
 }
 
+#errorMessage {
+  color: red;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+#successMsg {
+  color: green;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
 @media only screen and (min-width: 768px) {
   nav {
     padding: 26px 142px 26px 154px;

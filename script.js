@@ -223,7 +223,7 @@ document.querySelector('.modal-close-btn').addEventListener('click', () => {
   document.querySelector('.modal-container').style.display = 'none';
 });
 
-// CONTACT FORM VALIDATION
+// CONTACT FORM VALIDATION AND LOCAL STORAGE STARTS HERE //
 
 const emailError = document.querySelector('#errorMessage');
 const emailSent = document.querySelector('#successMsg');
@@ -248,3 +248,4 @@ function contactValidator(event) {
   }
 }
 form.addEventListener('submit', contactValidator);
+// CONTACT FORM VALIDATION  ANAD LOCALSTORAGE ENDS HERE //

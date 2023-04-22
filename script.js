@@ -232,6 +232,9 @@ const form = document.querySelector('#form');
 
 function contactValidator(event) {
   const email = document.querySelector('#email').value;
+  const name = document.querySelector('#name').value;
+  const message = document.querySelector('#message').value;
+
   const emailValidation = /[A-Z]/.test(email);
 
   if (emailValidation) {
@@ -239,6 +242,9 @@ function contactValidator(event) {
     event.preventDefault();
   } else {
     emailSent.textContent = 'Congratulations, Email sent 👏';
+    localStorage.setItem('name', name);
+    localStorage.setItem('message', message);
+    localStorage.setItem('email', email);
   }
 }
 form.addEventListener('submit', contactValidator);

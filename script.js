@@ -223,22 +223,53 @@ document.querySelector('.modal-close-btn').addEventListener('click', () => {
   document.querySelector('.modal-container').style.display = 'none';
 });
 
-// CONTACT FORM VALIDATION
-
-const emailError = document.querySelector('#errorMessage');
-const emailSent = document.querySelector('#successMsg');
+// CONTACT FORM VALIDATION AND LOCAL STORAGE STARTS HERE //
 
 const form = document.querySelector('#form');
 
-function contactValidator(event) {
-  const email = document.querySelector('#email').value;
-  const emailValidation = /[A-Z]/.test(email);
+const emailInput = document.querySelector('#email');
+const fullNameInput = document.querySelector('#name');
+const messageInput = document.querySelector('#message');
 
-  if (emailValidation) {
-    emailError.textContent = 'Email Not Sent⚠️, all the letters must be in lower case';
+function subMitform(event) {
+  const email = emailInput.value.trim();
+  if (email !== email.toLowerCase()) {
     event.preventDefault();
+    const error = document.querySelector('span');
+    error.textContent = 'Please enter your email in lower case.';
+    error.style.color = '#f55800';
+    error.style.fontFamily = 'Inter';
+    error.style.width = '400px';
+    form.appendChild(error);
+    setTimeout(() => {
+      error.remove();
+    }, 1000);
   } else {
-    emailSent.textContent = 'Congratulations, Email sent 👏';
+    const fullName = fullNameInput.value.trim();
+    const message = messageInput.value.trim();
+    const formData = {
+      fullName,
+      email,
+      message,
+    };
+
+    localStorage.setItem('formData', JSON.stringify(formData));
   }
 }
-form.addEventListener('submit', contactValidator);
+if (emailInput.value.toLowerCase) {
+  emailInput.addEventListener('change', subMitform);
+}
+fullNameInput.addEventListener('change', subMitform);
+messageInput.addEventListener('change', subMitform);
+
+form.addEventListener('submit', subMitform);
+const object = localStorage.getItem('formData');
+const getValue = JSON.parse(object);
+
+window.addEventListener('load', () => {
+  if (localStorage.getItem('formData')) {
+    document.querySelector('#name').value = getValue.fullName;
+    document.querySelector('#email').value = getValue.email;
+    document.querySelector('#message').value = getValue.message;
+  }
+});

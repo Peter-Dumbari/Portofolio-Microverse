@@ -61,7 +61,7 @@ const modalData = [
     languages: ['SASS', 'React js', 'Typescript'],
     description:
       ' The application give the accurate weather informations about the entire universe, it was build Lifesoft',
-    img: '/Assets/images/middlesectionimage.png',
+    img: 'https://res.cloudinary.com/tamstech-computer-repair-center/image/upload/v1698333923/middlesectionimage_dkplbe.png',
     livelink: 'https://lworldweather.netlify.app/',
     source: 'https://github.com/Peter-Dumbari/weather-application',
   },

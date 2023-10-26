@@ -83,7 +83,7 @@ const modalData = [
       'Hotel hub is a web application that allows users to see the lists of hotels rooms and book them.',
     img: 'https://res.cloudinary.com/tamstech-computer-repair-center/image/upload/v1698319831/Screen_Shot_2023-10-26_at_6.29.32_AM_zzipxv.png',
     livelink: 'https://hotel-hub-app.onrender.com/',
-    source: 'https://github.com/Peter-Dumbari/Calculator',
+    source: 'https://github.com/ProgramKingAbel/hotel-hub-frontend',
   },
   {
     main: false,

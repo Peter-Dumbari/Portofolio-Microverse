@@ -144,6 +144,16 @@ const modalData = [
     livelink: 'https://lworldweather.netlify.app/',
     source: 'https://github.com/Peter-Dumbari/weather-application',
   },
+  {
+    main: false,
+    name: 'Project Showcase',
+    languages: ['HTML', 'Bootstrap', 'Rails', 'React'],
+    description:
+      'Bookstore Application is an application that enable users to save books online for free',
+    img: 'https://res.cloudinary.com/tamstech-computer-repair-center/image/upload/v1698505441/Screen_Shot_2023-10-26_at_11.12.34_PM_zyagib.png',
+    livelink: 'https://bookstore-0bao.onrender.com/',
+    source: 'https://github.com/Peter-Dumbari/bookstore-application',
+  },
 ];
 (() => {
   modalData.forEach((project, index) => {

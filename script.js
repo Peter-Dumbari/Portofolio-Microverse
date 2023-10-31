@@ -274,4 +274,3 @@ function contactValidator(event) {
   }
 }
 form.addEventListener("submit", contactValidator);
-//more
